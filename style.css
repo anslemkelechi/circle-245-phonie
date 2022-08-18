@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/* Utility Class */
+.grid {
+  display: grid;
+}
+/* End Utility class */
+
+.header {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(70deg, #0e1015 0%, #0e1016f0 60%, #2629368f),
+    url(../img/bg-1.jpg);
+  background-size: cover;
+}
+.logo-box {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 10rem;
+}
+.logo-box img {
+  width: 100%;
+}
+.nav {
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  transform: translateX(-25%);
+}
+.nav ul {
+  list-style: none;
+}
+.nav ul li {
+  display: inline-block;
+}
+.nav ul li:not(:last-child) {
+  margin-right: 8rem;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
+}
+.divider {
+  position: absolute;
+  top: 0.5%;
+  left: 55%;
+  height: 99%;
+}
+.divider img {
+  height: 100%;
+}
+.header-container {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-30%);
+  width: 100%;
+}
+.header-content {
+  display: grid;
+  grid-template-columns: 50% 35%;
+  justify-content: center;
+}
+.form-header-sub {
+  color: #999;
+}
+.form-header-sub h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+.form-header-main {
+  margin-bottom: 2rem;
+}
+.form-header-main h2 {
+  color: #fff;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+.form-header-main span {
+  color: #1864e0;
+  font-size: 6rem;
+}
+.form-header-sub h4 {
+  font-size: 1.6rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+.form-header-sub a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #1864e0;
+}
+
+.form-input {
+  margin-bottom: 2rem;
+  padding: 1.5rem 3rem;
+  background-color: #323644;
+  border-color: transparent;
+  border-radius: 2rem;
+  color: #fff;
+}
+.phone-container{
+  position: relative;
+  }
+  .network-icon{
+  position: absolute;
+  top:50%;
+  left:0%;
+  transform: translateY(-50%);
+  width:6%;
+  border-radius: 2.5rem;
+  padding: .7rem 1rem;
+  }
+  .network-icon img{
+  width:100%;
+  }
+.form-input[type='tel'] {
+  width: 83%;
+}
+.phone-padding{
+  padding-left: 6rem;
+}
+.bg-white{
+  background-color:#fff;
+}
+.form-input[type='password'] {
+  width: 83%;
+}
+.form-input::placeholder {
+  color: #999;
+}
+.form-content button {
+  display: block;
+}
+.form-input:focus {
+  outline-color: #1864e0;
+  outline-style: solid;
+  outline-width: 2px;
+  border: none;
+}
+.form-actions {
+  grid-template-columns: 40% 40%;
+  grid-gap: 1.5rem;
+}
+.form-actions button {
+  padding: 1.5rem 3rem;
+  border-radius: 2.5rem;
+  background-color: #eee;
+  border-color: transparent;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.form-actions button:nth-child(2) {
+  background-color: #1864e0;
+  color: #fff;
+}
+.form-actions button:hover {
+  transform: translateY(-0.5rem);
+  transition: all 0.3s;
+}
+
+.reaction {
+  justify-self: end;
+  align-self: center;
+}
+.reaction-img {
+  width: 60%;
+}
+.reaction-img img {
+  width: 100%;
+  transition: all 0.3s;
+}
+.reaction-text {
+  background-color: #eee;
+  padding: 1rem 2rem;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.reaction-text p {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+/* Media Quries */
+@media screen and (max-width: 1100px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  .nav {
+    right: 5%;
+    left: inherit;
+  }
+  .network-icon{
+    width:14%;
+  }
+}
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    height: 115vh;
+  }
+  .divider {
+    display: none;
+  }
+  .header-container {
+    top: 40%;
+  }
+  .header-content {
+    grid-template-columns: 100%;
+  }
+  .form-container {
+    text-align: center;
+  }
+  .form-actions {
+    justify-content: center;
+  }
+  .network-icon{
+    width:13%;
+  }
+  .reaction {
+    grid-area: 1/1/1/1;
+    justify-self: center;
+  }
+  .reaction-img {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 55%;
+  }
+  .form-header-main h2 {
+    font-size: 3rem;
+  }
+  .network-icon{
+    width:15%;
+    padding:.8rem 1rem;
+  }
+}

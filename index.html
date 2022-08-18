@@ -1,19 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phonie | Project By Circle-245 - Altschool Africa </title>
+  <link rel="shortcut icon" href="img/icon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
-    <h2>make some magic here!!</h2>
 
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
-    <script src="index.mjs" type="module"></script>
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
+<body>
+
+  <header class="header">
+    <div class="logo-box">
+      <img src="img/logo-3.png" alt="logo">
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Join</a></li>
+      </ul>
+    </nav>
+    <div class="divider">
+      <img src="img/line.svg" alt="line">
+    </div>
+
+    <div class="header-container">
+      <div class="header-content">
+        <div class="form-container">
+          <div class="form-header-sub">
+            <h3>Start For Free</h3>
+          </div>
+          <div class="form-header-main">
+            <h2>Create New Account</h2><span>.</span>
+          </div>
+          <div class="form-header-sub">
+            <h4>Already a member?</h4> <a href="#">Log In</a>
+          </div>
+          <form action="#" class="form-content">
+            <div class="form-actions grid">
+              <input type="text" class="form-input fname" id="fname" placeholder="Username">
+              <input type="email" class="form-input email" placeholder="E-mail">
+            </div>
+            <input type="password" class="form-input password" placeholder="Password">
+            <span class="phone-container">
+              <input type="tel" class="form-input phone" minlength="11" maxlength="11"
+                pattern="[0802|0808|0812|0701|0902|0907|0901]{4}[0-9]{7}" placeholder="Phone Number" list="numPrefix">
+              <datalist id="numPrefix">
+                <!-- <option value="111-1111-1111">
+                        <option value="122-2222-2222">
+                        <option value="333-3333-3333">
+                        <option value="344-4444-4444"> -->
+              </datalist>
+              <div class="network-icon">
+                <!--<img src="img/icons/airtel.svg" alt="network logo"> -->
+              </div>
+            </span>
+            <div class="form-actions grid">
+              <button type="reset">Cancel</button>
+              <button type="submit">Create Account</button>
+            </div>
+          </form>
+        </div>
+        <div class="reaction">
+          <div class="reaction-text">
+            <p>Hi there!&#9995; I'm Jess, Please fill the form so i can get to know you.</p>
+          </div>
+          <div class="reaction-img">
+            <img src="img/illu/eyes-opened.svg" class="reaction-image" alt="eyes-opened">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
+  <script src="index.mjs" type="module"></script>
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
 </body>
+
 </html>
